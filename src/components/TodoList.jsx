@@ -1,11 +1,13 @@
 import TodoItem from "./TodoItem";
 
-export default function TodoList({ isDone }) {
+export default function TodoList({ title, todo }) {
   return (
     <section>
-      <h2>Working...</h2>
+      <h2>{title}</h2>
       <ul>
-        <TodoItem />
+        {todo.map((el) => {
+          return <TodoItem key={el.id} el={el} />;
+        })}
       </ul>
     </section>
   );
