@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import "./App.css";
 import { useState } from "react";
+import { add, remove } from "./redux/slices/calculatorSlice";
 
 // TODO: 계산결과를 redux를 이용한 전역상태로 관리해 보세요.
 function App() {
